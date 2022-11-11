@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gruppo', cursive;
+    text-align: center;
+}
+body{
+    background-image:URL("https://i.imgur.com/fU0XhVE.jpeg");
+}
+.background{
+    margin: 0 15em;
+    padding-bottom: 2em;
+    background-color: rgba(146, 145, 145, 0.3);
+}
+.title{
+    font-size: 4.5em;
+}
+.assignName{
+    display: inline;
+}
+.display{
+    display: inline;
+    font-size: 3em;
+    margin-top: 10px;
+}
+.displayPlayerSign{
+    font-size: 40px;
+    font-Family: 'Monoton', cursive;
+}
+.container{
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    width: 500px;
+    background-color: rgba(228, 93, 15, 0.3);
+}
+.tile{
+    min-width: 120px;
+    min-height: 120px;
+    border: 5px double white;
+}
+.displayAnnouncer {
+    display: block;
+    font-size: 4em;
+    margin-top: 10px;
+}
+.reset{
+    display: inline;
+    font-size: 40px;
+    border: solid 5px orangered;
+    padding: 0 4.5em;
+}

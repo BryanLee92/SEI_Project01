@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICTACTOE~</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <audio id="bubble" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-35448/zapsplat_cartoon_bubble_pop_005_40277.mp3"></audio>
+    <audio id="swipe" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-84577/zapsplat_cartoon_very_fast_whoosh_swoosh_swipe_or_snatch_002_89381.mp3"></audio>
+    <audio id="click" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-84577/zapsplat_multimedia_ui_chime_alert_notification_simple_ping_2_tone_medium_pitched_88738.mp3"></audio>
+    <main class="background">
+        <section class="title">
+            <h1>TIC.TAC.TOE</h1>
+            <hr>
+        </section>
+        <section class="assignName">
+            <input type="text" id="player1Name" placeholder="Player 1" required>
+            <input type="text" id="player2Name" placeholder="Player 2" required>
+            <button class="submit" type="submit"><strong>SUBMIT</strong></button>
+        </section>
+        <section class ="display">
+            <h4><span class="displayPlayerName">PLAYER 1</span> <span class="displayPlayerSign">X</span></h4>
+        </section>
+        <section class="container">
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+            <div class="tile" data-tile></div>
+        </section>
+        <section class="displayAnnouncer"></section>
+        <section class="control">
+            <button class="reset" type="reset"><strong>RESET</strong></button>
+        </section>
+    </main>
+</body>
+</html>
