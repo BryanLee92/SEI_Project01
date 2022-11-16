@@ -16,7 +16,6 @@
 </head>
 <body>
     <audio id="bubble" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-35448/zapsplat_cartoon_bubble_pop_005_40277.mp3"></audio>
-    <audio id="swipe" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-84577/zapsplat_cartoon_very_fast_whoosh_swoosh_swipe_or_snatch_002_89381.mp3"></audio>
     <audio id="click" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-84577/zapsplat_multimedia_ui_chime_alert_notification_simple_ping_2_tone_medium_pitched_88738.mp3"></audio>
     <main class="background">
         <section class="title">
@@ -24,8 +23,8 @@
             <hr>
         </section>
         <section class="assignName">
-            <input type="text" id="player1Name" placeholder="Player 1" required>
-            <input type="text" id="player2Name" placeholder="Player 2" required>
+            <input class="p1Name" type="text" id="player1Name" placeholder="Player 1" required>
+            <input class="p2Name" type="text" id="player2Name" placeholder="Player 2" required>
             <button class="submit" type="submit"><strong>SUBMIT</strong></button>
         </section>
         <section class ="display">
@@ -45,6 +44,7 @@
         <section class="displayAnnouncer"></section>
         <section class="control">
             <button class="reset" type="reset"><strong>RESET</strong></button>
+            <button class="continue" type="reset"><strong>CONTINUE</strong></button>
         </section>
     </main>
 </body>

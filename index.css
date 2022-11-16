@@ -9,14 +9,32 @@ body{
 }
 .background{
     margin: 0 15em;
-    padding-bottom: 2em;
     background-color: rgba(146, 145, 145, 0.3);
+    height: 110vh;
+}
+.p1Name, .p2Name{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 20px;
+}
+.p1Name{
+    color: rgba(255, 0, 0, 1);
+}
+.p2Name{
+    color: rgba(0, 0, 183, 1);
+}
+.submit{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 .title{
     font-size: 4.5em;
 }
 .assignName{
     display: inline;
+    padding-top: 100px;
 }
 .display{
     display: inline;
@@ -40,6 +58,11 @@ body{
     min-width: 120px;
     min-height: 120px;
     border: 5px double white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.tile:hover{
+    background: rgba(255, 255, 255, 0.5);
 }
 .displayAnnouncer {
     display: block;
@@ -47,8 +70,66 @@ body{
     margin-top: 10px;
 }
 .reset{
-    display: inline;
     font-size: 40px;
-    border: solid 5px orangered;
-    padding: 0 4.5em;
+    padding: 0 3em;
+    background-color: rgba(240, 58, 13, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.reset:hover{
+    border-color: red;
+    box-shadow: 2px 5px 33px 12px rgba(240, 58, 13, 0.5); 
+}
+.continue{
+    font-size: 40px;
+    padding: 0 1.8em;
+    background-color: rgba(13, 240, 183, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.continue:hover{
+    border-color: aqua;
+    box-shadow: 2px 5px 33px 12px rgba(13, 240, 183, 0.5); 
+}
+@media screen and (max-width: 1269px) {
+    .background{
+        margin: 0 20px;
+        height: 150vh;
+    }
+    .title h1{
+        font-size: 80px;
+    }
+    .reset{
+        margin-top: 30px;
+    }
+    .continue{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title h1{
+        font-size: 50px;
+    }
+    .submit{
+        width:100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .tile{
+        border: 1px solid white;
+        width: 100%;
+        min-width: 60px;
+        min-height: 80px;
+    }
+    .reset{
+        width:100%;
+        font-size: 30px;
+    }
+    .continue{
+        width:100%;
+        font-size: 30px;
+    }
 }

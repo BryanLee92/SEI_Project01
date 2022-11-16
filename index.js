@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    let tiles = document.querySelectorAll(`[data-tile]`);
 
    //sounds
-   let myO = document.getElementById("bubble");
-   let myX = document.getElementById("swipe");
+   let choice = document.getElementById("bubble");
    let reButton = document.getElementById("click");
 
    //win condition
@@ -36,6 +35,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
    // reset button and continue
    let resetButton = document.querySelector(".reset");
+   let continueButton = document.querySelector(".continue");
 
    btn.addEventListener('click', ()=>{
       displayName.textContent= player1.value;
@@ -67,12 +67,14 @@ document.addEventListener('DOMContentLoaded',()=>{
       tile.style.fontFamily = "'Monoton', cursive";
       tile.style.fontSize = "5.5em";
       if(currentPlayer === 'O'){
-         tile.style.color = "teal";
-         myO.play();
+         tile.style.color = "white";
+         tile.style.background = "teal";
+         choice.play();
       }
       else{
-         tile.style.color = "orangered";
-         myX.play();
+         tile.style.color = "white";
+         tile.style.background = "orangered";
+         choice.play();
       }
    };
 
@@ -121,7 +123,8 @@ document.addEventListener('DOMContentLoaded',()=>{
       tiles.forEach(tile=>{
          player1.value = '';
          player2.value = '';
-         displayName.textContent= 'PLAYER1';
+         tile.style.background = "";
+         displayName.textContent= 'PLAYER 1';
          displaySign.textContent= 'X';
          currentPlayer = 'X';
          tile.classList.remove('X');
@@ -131,4 +134,18 @@ document.addEventListener('DOMContentLoaded',()=>{
          reButton.play();
       })
    });
+
+   continueButton.addEventListener('click', ()=>{
+      tiles.forEach(tile=>{
+         displayName.textContent= player1.value;
+         displaySign.textContent= 'X';
+         tile.style.background = "";
+         currentPlayer = 'X';
+         tile.classList.remove('X');
+         tile.classList.remove('O');
+         tile.textContent= '';
+         announcer.textContent = '';
+         reButton.play();
+      })
+   })
 });
