@@ -32,10 +32,6 @@ body{
 .title{
     font-size: 4.5em;
 }
-.assignName{
-    display: inline;
-    padding-top: 100px;
-}
 .display{
     display: inline;
     font-size: 3em;
