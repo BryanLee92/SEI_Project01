@@ -39,8 +39,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
    btn.addEventListener('click', ()=>{
       displayName.textContent= player1.value;
-      scoreName1.textContent= player1.value;
-      scoreName2.textContent= player2.value;
    });
 
    tiles.forEach(tile =>{
